@@ -2,7 +2,11 @@
 <html>
   <head>
     <title>demo!</title>
-    <link href="{{ url_for('static',filename='styles/products.css') }}" rel="stylesheet" type="text/css" />
+    <link
+      href="{{ url_for('static',filename='styles/products.css') }}"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
   <body>
     <div class="navbar">
@@ -11,9 +15,13 @@
       <a class="active" href="gad-form">GAD-7</a>
       <a class="active" href="about">About Us</a>
     </div>
+    <section class="product-title">
+      <h1>Our Products</h1>
+    </section>
     <section class="products-section">
       <div class="product">
         <h3>Online Counseling</h3>
+        <br />
         <p>
           Access professional counselors for personalized support and guidance.
           Our online counseling service provides a convenient and confidential
@@ -22,16 +30,12 @@
           other mental health concerns, our experienced counselors are here to
           help.
         </p>
-        <p>
-          Through secure video sessions, you can discuss your challenges,
-          receive expert advice, and develop coping strategies. Our counselors
-          offer a compassionate and non-judgmental environment, empowering you
-          to navigate life's difficulties and improve your overall well-being.
-        </p>
+
         <a href="online-counseling.html" class="btn">Learn More</a>
       </div>
       <div class="product">
         <h3>Mental Health Articles</h3>
+        <br />
         <p>
           Read informative articles and insights on various mental health
           topics.
@@ -42,16 +46,11 @@
           experts, these articles cover subjects such as anxiety, depression,
           stress management, self-care, relationships, and much more.
         </p>
-        <p>
-          By reading our articles, you can gain a better understanding of mental
-          health issues, learn practical strategies for coping and
-          self-improvement, and discover tips for maintaining overall
-          well-being. Stay informed and empowered on your mental health journey.
-        </p>
         <a href="mental-health-articles.html" class="btn">Learn More</a>
       </div>
       <div class="product">
         <h3>Chatbot</h3>
+        <br />
         <p>
           Engage with our interactive chatbot for instant responses and
           self-help resources.

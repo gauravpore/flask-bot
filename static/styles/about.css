@@ -1,11 +1,7 @@
 body {
   margin: 10px;
   padding: 0;
-  background: linear-gradient(
-    90deg,
-    rgba(78, 211, 221, 1) 37%,
-    rgba(176, 186, 192, 1) 64%
-  );
+  background: #000000;
   background-repeat: repeat;
   font-family: Apercu, sans-serif;
 }
@@ -44,6 +40,7 @@ body {
   margin-top: 50px;
   flex: 1;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 .about-title h1 {
@@ -57,15 +54,43 @@ body {
 .content-container {
   flex: 1;
   padding: 0 20px;
+  margin-top: 20px;
 }
 
 .content-container h2 {
-  font-size: 24px;
+  font-size: 30px;
   margin-bottom: 10px;
+  color: rgb(71, 174, 27);
+  font-weight: bold;
 }
 
 .content-container p {
-  font-size: 16px;
+  font-size: 20px;
+  color: #fff;
   line-height: 1.5;
   font-family: Apercu, sans-serif;
+}
+
+/* .mission {
+  
+} */
+
+.mission-container {
+  font-family: Apercu, sans-serif;
+}
+
+.mission-container h2 {
+  font-size: 30px;
+  margin-top: 100px;
+  color: #fff;
+  margin-right: 30px;
+  text-align: center;
+}
+
+.mission-content {
+  display: flex;
+}
+
+.mission-content p {
+  color: #fff;
 }
