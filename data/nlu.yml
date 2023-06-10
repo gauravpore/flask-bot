@@ -1,0 +1,266 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - Hi
+    - Hello
+    
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - Yes
+    - absolutely
+
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - No, I dont feel like
+
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - I'm feeling great today
+    - Today is a fantastic day!
+    - I'm so happy right now
+    - Life is beautiful
+    - Everything is going well
+    - I'm doing good
+
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+    - I'm feeling down
+    - Today is not my day
+    - I'm so frustrated
+    - I'm sad and lonely
+    - I feel hopeless
+    - I'm very sad
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+- intent: mood_thankful
+  examples: |
+    - Thank you so much!
+    - I really appreciate your help
+    - You're amazing, thanks
+    - I'm grateful for your support
+    - Thanks a lot for being there
+    - Thanks
+
+- intent: mood_motivated
+  examples: |
+    - I need some motivation
+    - Can you boost my spirits?
+    - I want to stay positive
+    - Give me a pep talk
+    - I need some inspiration
+
+- intent: mood_lonely
+  examples: |
+    - I'm feeling lonely
+    - I need someone to talk to
+    - I miss having company
+    - I feel isolated
+    - I'm craving social interaction
+
+- intent: mood_excited
+  examples: |
+    - I'm so excited about this!
+    - I can't wait for the event
+    - I'm thrilled for the new release
+    - This is going to be awesome!
+    - I'm bursting with anticipation
+- intent: mood_bored
+  examples: |
+    - I'm so bored right now
+    - I have nothing to do
+    - Can you suggest something interesting?
+    - I need entertainment
+    - I'm feeling restless
+
+- intent: mood_confused
+  examples: |
+    - I'm confused about this topic
+    - I don't understand what's happening
+    - Can you clarify this for me?
+    - I'm feeling lost
+    - I need some guidance
+
+- intent: mood_love
+  examples: |
+    - I'm in love!
+    - I'm feeling loved and appreciated
+    - Love is in the air
+    - I adore this person
+    - Love makes everything better
+
+- intent: mood_hopeful
+  examples: |
+    - I'm hopeful for the future
+    - I have faith in better days
+    - I see a light at the end of the tunnel
+    - I'm optimistic about the outcome
+    - Hope keeps me going
+
+- intent: mood_energetic
+  examples: |
+    - I'm full of energy!
+    - Let's get things done
+    - I'm ready for action
+    - I feel alive and vibrant
+    - Energized and motivated!
+
+- intent: mood_grateful
+  examples: |
+    - I'm so grateful for my friends
+    - I appreciate the little things in life
+    - I'm thankful for the support I have
+    - Gratitude fills my heart
+    - I'm blessed with wonderful people
+
+- intent: mood_disappointed
+  examples: |
+    - I'm disappointed with the results
+    - This didn't meet my expectations
+    - I had high hopes, but it didn't work out
+    - I feel let down
+    - It's frustrating to
+
+- intent: tell_name
+  examples: |
+    - what is your name?
+    - tell me your name
+    - what others call you
+    - what should i call you?
+
+- intent: my_name
+  examples: |
+    - My name is [john](name)
+    - Call me [sarah](name)
+    - Hi, I'm [alex](name)
+    - You can call me [mike](name)
+    - This is [emily](name) speaking
+    - My name is Atherv
+
+- intent: user_mobile_number
+  examples: |
+    - My number is [8556252322](mobile_number)
+    - You can call me on [8556252322](mobile_number)
+    - [8556252322](mobile_number)
+    - phone number is {"entity":"mobile_number"}
+
+- intent: ask_lower_stress
+  examples: |
+    - what do I do if I'm  stressed
+    - How can I lower my stress level?
+    - What are some good ways to lower stress?
+    - what are good ways to relax?
+    - what are some thing I can do to lower my stress?
+    - I'm feeling stressed out
+    - I can't handle this pressure
+    - I'm overwhelmed with work
+    - I need to relax
+    - I'm so tense and anxious
+
+- intent: ask_eat_healthy
+  examples: |
+    - what's considered a healthy diet?
+    - what's considered a good diet?
+    - How do i follow a healthy diet?
+    - What's an example of a healthy diet?
+    - How do I eat healthy?
+- intent: ask_exercise
+  examples: |
+    - what's a good amount of exercise for someone in their thirties?
+    - How much exercise should I be getting?
+    - How much exercise is recommend?
+    - Is walking once a day enough exercise?
+    - How much exercise should I do every day?
+    - How many times per week should I go to the gym
+
+- intent: work_anxiety
+  examples: |
+    - My work pressure makes me anxious
+    - I'm feeling anxious about work
+    - Can you help me with my work anxiety?
+    - I'm stressed about my job, what should I do?
+    - How can I manage my anxiety at work?
+    - I need advice for dealing with work-related anxiety
+
+- intent: loss_of_loving_person
+  examples: |
+    - I lost my [dog](loved_one), Nino
+    - I lost my [grandmother](loved_one) to cancer
+    - I lost my [sister](loved_one) in an accident last month
+    - My [uncle](loved_one) died because of heart attack
+    - we lost our favourite [dog](loved_one), jack
+    - I lost my [grandmother](loved_one)

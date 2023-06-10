@@ -1,0 +1,71 @@
+body {
+  margin: 10px;
+  padding: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(78, 211, 221, 1) 37%,
+    rgba(176, 186, 192, 1) 64%
+  );
+  background-repeat: repeat;
+  font-family: Apercu, sans-serif;
+}
+
+.navbar {
+  /* background-color: #43b168; */
+  overflow: hidden;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: #fcefef;
+  text-align: center;
+  padding: 20px 24px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Apercu, sans-serif;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+}
+
+.navbar a.active {
+  color: rgb(71, 174, 27);
+  font-weight: bold;
+}
+
+.about-section {
+  display: flex;
+  align-items: center;
+}
+
+.about-title {
+  margin-top: 50px;
+  flex: 1;
+  text-align: center;
+}
+
+.about-title h1 {
+  font-size: 70px;
+}
+
+.about-title h2 {
+  line-height: 2px;
+  font-size: 70px;
+}
+.content-container {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.content-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.content-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: Apercu, sans-serif;
+}

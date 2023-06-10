@@ -1,0 +1,110 @@
+version: "3.1"
+
+intents:
+- affirm
+- loss_of_loving_person
+- mood_unhappy
+- greet
+- mood_thankful
+- deny
+- work_anxiety
+- my_name
+- mood_great
+- goodbye
+- bot_challenge
+- mood_motivated
+- mood_lonely
+- mood_excited
+- mood_bored
+- mood_confused
+- mood_love
+- mood_hopeful
+- mood_grateful
+- mood_disappointed
+- tell_name
+- ask_lower_stress
+- ask_eat_healthy
+- ask_exercise
+entities:
+- loved_one
+- name
+slots:
+  name:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: name
+  loved_one:
+    type: text
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: loved_one
+responses:
+  utter_greet:
+  - text: Hey! How you doin' ?
+  utter_name:
+  - text: My name is Raze
+  utter_ask_name:
+  - text: What is your name?
+  utter_confirm_name:
+  - text: Thank you, {name}! How can I assist you?
+  utter_ask_mobile_number:
+  - text: What is your mobile number?
+  utter_thanks:
+  - text: Thanks for providing the values
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot, powered by Rasa.
+  utter_sad_console:
+  - text: I'm sorry to hear that. Do you want to talk about it?
+  utter_ask_reason_for_sadness:
+  - text: I'm here for you. What's on your mind?
+  utter_sorry_for_loss:
+  - text: Oh No, I'm sorry to hear that. Losing someone you love is never easy. It's okay to take time to grieve and to remember your {loved_one} in the way that feels best for you.
+  utter_deny_to_talk:
+  - text: That's Okay. Just remember that it's okay to take time for yourelf and to prioritize your mental health.
+  utter_work_anxiety_advice:
+  - text: That sounds tough. Have you tried taking breaks during the day to help reduce your stress levels?
+  utter_appreciation:
+  - text: Great! You are doing good
+  utter_confusion_statement:
+  - text: Remember that it's okay to take some time to figure things out. Give yourself permission to explore and seek answers at your own pace
+  utter_education_confusion:
+  - text: It's completely normal to feel confused when making such an important decision. Have you considered making a list of what matters most to you in a college, such as academic programs, location, or campus culture?
+  utter_lonely_cheer_up:
+  - text: Loneliness is a universal feeling, and many people experience it. If you're open to it, there are communities and support groups where you can connect with others who may be going through something similar Would you like to talk more about what you're going through? Sometimes sharing your feelings can provide some relief and support.
+  utter_stress_info:
+  - text: It's okay to feel overwhelmed at times. Try to set realistic expectations and exercise time managment techniques, like dividing large tasks into more manageable pieces. Relaxation techniques, deep breathing and meditation can also be beneficial.
+  utter_exercise_info:
+  - text: Most healthy adults should aim to get about 150min of moderate exercise per week. This includes activities like jogging or playing outdoor sports.
+  utter_diet_info:
+  - text: A healthy diet includes fruits and veggies, whole grains, diary, lean protein, and fats. Aim for variety of food, and balance
+actions:
+- action_being_lost
+- action_save_name
+- utter_appreciation
+- utter_ask_name
+- utter_ask_reason_for_sadness
+- utter_confirm_name
+- utter_deny_to_talk
+- utter_did_that_help
+- utter_greet
+- utter_happy
+- utter_name
+- utter_sad_console
+- utter_sorry_for_loss
+- utter_work_anxiety_advice
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

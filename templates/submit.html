@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>demo!</title>
+    <link href="{{ url_for('static',filename='styles/submit.css') }}" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <a class="active" href="/">Home</a>
+      <a class="active" href="products">Products</a>
+      <a class="active" href="gad-form">GAD-7</a>
+      <a class="active" href="about">About Us</a>
+    </div>
+    <div>
+      <div class="response">
+        <h1>GAD-7 Test Results</h1>
+        <p>Thanks for taking the test. Below is your test result:<br>
+            You have {{ test_output }}</p>
+      </div>
+    </div>
+  </body>
+</html>

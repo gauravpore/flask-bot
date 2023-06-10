@@ -1,0 +1,82 @@
+body {
+  margin: 10px;
+  padding: 0;
+  background-image: url(homeback.png);
+  background-repeat: repeat;
+}
+
+.navbar {
+  /* background-color: #43b168; */
+  overflow: hidden;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color: #fcefef;
+  text-align: center;
+  padding: 20px 24px;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Apercu, sans-serif;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+}
+
+.navbar a.active {
+  color: rgb(71, 174, 27);
+  font-weight: bold;
+}
+
+.card {
+  margin-top: 50px;
+  flex-direction: column;
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 60px;
+}
+
+.card-content {
+  flex: 1;
+  display: flex;
+  height: 100px;
+  width: 800px;
+}
+
+.card h3 {
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  font-family: Apercu, sans-serif;
+  text-rendering: optimizeLegibility;
+  padding: 5px;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  display: block;
+  padding-top: 5px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+  font-family: Apercu, sans-serif;
+  text-rendering: optimizeLegibility;
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.625rem;
+  margin-bottom: 30px;
+}
+
+.svg-container {
+  display: flex;
+
+  width: 90px; /* Adjust the width as needed */
+  height: 90px; /* Adjust the height as needed */
+}
+
+.svg-container img {
+  width: 100%;
+  height: 100%;
+}

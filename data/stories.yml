@@ -1,0 +1,119 @@
+version: "3.1"
+
+stories:
+  # - story: happy path
+  #   steps:
+  #     - intent: greet
+  #     - action: utter_greet
+  #     - intent: mood_great
+  #     - action: utter_happy
+
+  - story: sad path 1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: affirm
+      - action: utter_happy
+
+  - story: sad path 2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_unhappy
+      - action: utter_cheer_up
+      - action: utter_did_that_help
+      - intent: deny
+      - action: utter_goodbye
+
+  - story: happy name path
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: tell_name
+      - action: utter_name
+      - action: utter_ask_name
+      - intent: my_name
+        entities:
+          - name: "rahul"
+      - slot_was_set:
+          - name: "rahul"
+      - action: action_save_name
+      - action: utter_confirm_name
+
+  - story: ask diet questions
+    steps:
+      - intent: ask_eat_healthy
+      - action: utter_diet_info
+
+  - story: ask stress question
+    steps:
+      - intent: ask_lower_stress
+      - action: utter_stress_info
+
+  - story: ask exercise
+    steps:
+      - intent: ask_exercise
+      - action: utter_exercise_info
+
+  - story: interactive_story_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: mood_great
+      - action: utter_name
+      - action: utter_ask_name
+      - intent: my_name
+      - action: action_save_name
+      - action: utter_confirm_name
+
+  - story: interactive_story_2
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: work_anxiety
+      - action: utter_work_anxiety_advice
+      - intent: affirm
+
+  - story: work_anxiety_story_1
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: work_anxiety
+      - action: utter_work_anxiety_advice
+      - intent: affirm
+      - action: utter_appreciation
+
+  - story: sadness_due_to_loss_story_1
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_unhappy
+    - action: utter_sad_console
+    - intent: deny
+    - action: utter_deny_to_talk
+
+
+  - story: sadness_due_to_loss_story_2
+    steps:
+    - intent: greet
+    - action: utter_greet
+    - intent: mood_unhappy
+    - action: utter_sad_console
+    - intent: affirm
+    - action: utter_ask_reason_for_sadness
+    - intent: loss_of_loving_person
+      entities:
+      - loved_one: grandmother
+    - slot_was_set:
+      - loved_one: grandmother
+    - action: action_being_lost
+    - slot_was_set:
+      - loved_one: grandmother
+    - action: utter_sorry_for_loss
+    - intent: mood_thankful
+    - action: utter_did_that_help
+    - intent: affirm
+    - action: utter_happy
