@@ -1,0 +1,44 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-family",
+      "2": "I-family",
+      "3": "L-family",
+      "4": "U-family",
+      "5": "B-loved_one",
+      "6": "I-loved_one",
+      "7": "L-loved_one",
+      "8": "U-loved_one",
+      "9": "B-mobile_number",
+      "10": "I-mobile_number",
+      "11": "L-mobile_number",
+      "12": "U-mobile_number",
+      "13": "B-name",
+      "14": "I-name",
+      "15": "L-name",
+      "16": "U-name",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-family": 1,
+      "I-family": 2,
+      "L-family": 3,
+      "U-family": 4,
+      "B-loved_one": 5,
+      "I-loved_one": 6,
+      "L-loved_one": 7,
+      "U-loved_one": 8,
+      "B-mobile_number": 9,
+      "I-mobile_number": 10,
+      "L-mobile_number": 11,
+      "U-mobile_number": 12,
+      "B-name": 13,
+      "I-name": 14,
+      "L-name": 15,
+      "U-name": 16,
+      "O": 0
+    },
+    "num_tags": 17
+  }
+]

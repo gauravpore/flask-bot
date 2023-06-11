@@ -6,10 +6,12 @@
   </head>
   <body>
     <div class="navbar">
-      <a class="active" href="/">Home</a>
+      <a class="active" href="about">About Us</a>
       <a class="active" href="products">Products</a>
       <a class="active" href="gad-form">GAD-7</a>
-      <a class="active" href="about">About Us</a>
+      <a class="active" href="/">Home</a>
+      <div id="rasa-chat-widget" data-websocket-url="http://0.0.0.0:5005" data-height="450"></div>
+      <script src="https://unpkg.com/@rasahq/rasa-chat" type="application/javascript"></script>
     </div>
     <div>
       <form class="quiz-form" action="http://localhost:5000/gad-form" method="post">

@@ -1,5 +1,4 @@
 version: "3.1"
-
 nlu:
 - intent: greet
   examples: |
@@ -18,7 +17,6 @@ nlu:
     - good afternoon
     - Hi
     - Hello
-    
 - intent: goodbye
   examples: |
     - cu
@@ -31,7 +29,6 @@ nlu:
     - see you around
     - bye bye
     - see you later
-
 - intent: affirm
   examples: |
     - yes
@@ -42,7 +39,6 @@ nlu:
     - correct
     - Yes
     - absolutely
-
 - intent: deny
   examples: |
     - no
@@ -53,7 +49,6 @@ nlu:
     - no way
     - not really
     - No, I dont feel like
-
 - intent: mood_great
   examples: |
     - perfect
@@ -76,7 +71,7 @@ nlu:
     - Life is beautiful
     - Everything is going well
     - I'm doing good
-
+    - I'm very happy
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -99,14 +94,13 @@ nlu:
     - I'm sad and lonely
     - I feel hopeless
     - I'm very sad
-
+    - I'm sad
 - intent: bot_challenge
   examples: |
     - are you a bot?
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
-
 - intent: mood_thankful
   examples: |
     - Thank you so much!
@@ -115,7 +109,6 @@ nlu:
     - I'm grateful for your support
     - Thanks a lot for being there
     - Thanks
-
 - intent: mood_motivated
   examples: |
     - I need some motivation
@@ -123,7 +116,6 @@ nlu:
     - I want to stay positive
     - Give me a pep talk
     - I need some inspiration
-
 - intent: mood_lonely
   examples: |
     - I'm feeling lonely
@@ -131,7 +123,6 @@ nlu:
     - I miss having company
     - I feel isolated
     - I'm craving social interaction
-
 - intent: mood_excited
   examples: |
     - I'm so excited about this!
@@ -146,7 +137,7 @@ nlu:
     - Can you suggest something interesting?
     - I need entertainment
     - I'm feeling restless
-
+    - I'm very bored
 - intent: mood_confused
   examples: |
     - I'm confused about this topic
@@ -154,7 +145,6 @@ nlu:
     - Can you clarify this for me?
     - I'm feeling lost
     - I need some guidance
-
 - intent: mood_love
   examples: |
     - I'm in love!
@@ -162,7 +152,6 @@ nlu:
     - Love is in the air
     - I adore this person
     - Love makes everything better
-
 - intent: mood_hopeful
   examples: |
     - I'm hopeful for the future
@@ -170,7 +159,6 @@ nlu:
     - I see a light at the end of the tunnel
     - I'm optimistic about the outcome
     - Hope keeps me going
-
 - intent: mood_energetic
   examples: |
     - I'm full of energy!
@@ -178,7 +166,6 @@ nlu:
     - I'm ready for action
     - I feel alive and vibrant
     - Energized and motivated!
-
 - intent: mood_grateful
   examples: |
     - I'm so grateful for my friends
@@ -186,7 +173,6 @@ nlu:
     - I'm thankful for the support I have
     - Gratitude fills my heart
     - I'm blessed with wonderful people
-
 - intent: mood_disappointed
   examples: |
     - I'm disappointed with the results
@@ -194,14 +180,13 @@ nlu:
     - I had high hopes, but it didn't work out
     - I feel let down
     - It's frustrating to
-
+    - I'm very disappointed with the results
 - intent: tell_name
   examples: |
     - what is your name?
     - tell me your name
     - what others call you
     - what should i call you?
-
 - intent: my_name
   examples: |
     - My name is [john](name)
@@ -210,14 +195,13 @@ nlu:
     - You can call me [mike](name)
     - This is [emily](name) speaking
     - My name is Atherv
-
+    - My mom scolded me
 - intent: user_mobile_number
   examples: |
     - My number is [8556252322](mobile_number)
     - You can call me on [8556252322](mobile_number)
     - [8556252322](mobile_number)
     - phone number is {"entity":"mobile_number"}
-
 - intent: ask_lower_stress
   examples: |
     - what do I do if I'm  stressed
@@ -230,7 +214,6 @@ nlu:
     - I'm overwhelmed with work
     - I need to relax
     - I'm so tense and anxious
-
 - intent: ask_eat_healthy
   examples: |
     - what's considered a healthy diet?
@@ -246,7 +229,6 @@ nlu:
     - Is walking once a day enough exercise?
     - How much exercise should I do every day?
     - How many times per week should I go to the gym
-
 - intent: work_anxiety
   examples: |
     - My work pressure makes me anxious
@@ -255,7 +237,6 @@ nlu:
     - I'm stressed about my job, what should I do?
     - How can I manage my anxiety at work?
     - I need advice for dealing with work-related anxiety
-
 - intent: loss_of_loving_person
   examples: |
     - I lost my [dog](loved_one), Nino
@@ -264,3 +245,6 @@ nlu:
     - My [uncle](loved_one) died because of heart attack
     - we lost our favourite [dog](loved_one), jack
     - I lost my [grandmother](loved_one)
+- intent: family_issue
+  examples: |
+    - [mom](family) scolded me

@@ -1,59 +1,33 @@
-version: "3.1"
-
+version: '3.1'
 intents:
 - affirm
-- loss_of_loving_person
-- mood_unhappy
-- greet
-- mood_thankful
-- deny
-- work_anxiety
-- my_name
-- mood_great
-- goodbye
-- bot_challenge
-- mood_motivated
-- mood_lonely
-- mood_excited
-- mood_bored
-- mood_confused
-- mood_love
-- mood_hopeful
-- mood_grateful
-- mood_disappointed
-- tell_name
-- ask_lower_stress
 - ask_eat_healthy
 - ask_exercise
-entities:
-- loved_one
-- name
-slots:
-  name:
-    type: text
-    influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: name
-  loved_one:
-    type: text
-    influence_conversation: true
-    mappings:
-    - type: from_entity
-      entity: loved_one
+- ask_lower_stress
+- bot_challenge
+- deny
+- family_issue
+- goodbye
+- greet
+- loss_of_loving_person
+- mood_bored
+- mood_confused
+- mood_disappointed
+- mood_excited
+- mood_grateful
+- mood_great
+- mood_hopeful
+- mood_lonely
+- mood_love
+- mood_motivated
+- mood_thankful
+- mood_unhappy
+- my_name
+- tell_name
+- work_anxiety
 responses:
   utter_greet:
-  - text: Hey! How you doin' ?
-  utter_name:
-  - text: My name is Raze
-  utter_ask_name:
-  - text: What is your name?
-  utter_confirm_name:
-  - text: Thank you, {name}! How can I assist you?
-  utter_ask_mobile_number:
-  - text: What is your mobile number?
-  utter_thanks:
-  - text: Thanks for providing the values
+  - text: Hey! My name is Raze. How can I assist You?
   utter_cheer_up:
   - text: 'Here is something to cheer you up:'
     image: https://i.imgur.com/nGF1K8f.jpg
@@ -70,7 +44,7 @@ responses:
   utter_ask_reason_for_sadness:
   - text: I'm here for you. What's on your mind?
   utter_sorry_for_loss:
-  - text: Oh No, I'm sorry to hear that. Losing someone you love is never easy. It's okay to take time to grieve and to remember your {loved_one} in the way that feels best for you.
+  - text: Oh No, I'm sorry to hear that. Losing someone you love is never easy. It's okay to take time to grieve and to remember your loved one in the way that feels best for you.
   utter_deny_to_talk:
   - text: That's Okay. Just remember that it's okay to take time for yourelf and to prioritize your mental health.
   utter_work_anxiety_advice:
@@ -89,22 +63,25 @@ responses:
   - text: Most healthy adults should aim to get about 150min of moderate exercise per week. This includes activities like jogging or playing outdoor sports.
   utter_diet_info:
   - text: A healthy diet includes fruits and veggies, whole grains, diary, lean protein, and fats. Aim for variety of food, and balance
+  utter_feedback:
+  - text: Please feelthe feedback form. https://forms.gle/aFCGXntjuLhBwxHg6
 actions:
-- action_being_lost
-- action_save_name
+- utter_greet
+- utter_sad_console
+- utter_cheer_up
+- utter_feedback
 - utter_appreciation
 - utter_ask_name
 - utter_ask_reason_for_sadness
 - utter_confirm_name
 - utter_deny_to_talk
 - utter_did_that_help
-- utter_greet
 - utter_happy
 - utter_name
-- utter_sad_console
 - utter_sorry_for_loss
 - utter_work_anxiety_advice
-
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+entities:
+- family
