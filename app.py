@@ -11,6 +11,10 @@ def index():
 
 @app.route("/gad-form", methods=["GET", "POST"])
 def gad_form():
+    """"
+    gad_form() is a function that fetches the data from the web page and 
+    returns a response rendered in a HTML template
+    """
     if request.method == "POST":
         print(request.form)
         data = dict((key, request.form.getlist(key)) for key in request.form.keys())
@@ -26,15 +30,24 @@ def gad_form():
 
 @app.route("/products", methods=["GET"])
 def product():
+    """
+    product() is a function that renders the products web page
+    """
     return render_template("products.html")
 
 
 @app.route("/about", methods=["GET"])
 def about():
+    """
+    about() is a function that renders the about web page
+    """
     return render_template("about.html")
 
 
 def calculate_gad_result(total):
+    """
+    calculate_gad_result() calculates the test results of GAD test
+    """
     if total < 5:
         result = "No Anxiety"
     elif total >= 5 and total < 10:

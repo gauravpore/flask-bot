@@ -2,7 +2,11 @@
 <html>
   <head>
     <title>demo!</title>
-    <link href="{{ url_for('static',filename='styles/gad.css') }}" rel="stylesheet" type="text/css" />
+    <link
+      href="{{ url_for('static',filename='styles/gad.css') }}"
+      rel="stylesheet"
+      type="text/css"
+    />
   </head>
   <body>
     <div class="navbar">
@@ -12,7 +16,11 @@
       <a class="active" href="about">About Us</a>
     </div>
     <div>
-      <form class="quiz-form" action="http://localhost:5000/gad-form" method="post">
+      <form
+        class="quiz-form"
+        action="http://localhost:5000/gad-form"
+        method="post"
+      >
         <h2 style="padding-bottom: 10px">
           Generalized Anxiety Disorder (GAD-7)
         </h2>
